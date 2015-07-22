@@ -1,0 +1,24 @@
+c# ½Ì±×Åæ
+public class Singleton 
+{ 
+private static readonly Singleton _onlyOne; 
+static Singleton() 
+{ 
+
+_onlyOne = new Singleton(); 
+} 
+public static Singleton TheOnly? 
+{ 
+
+get 
+{ 
+return _onlyOne; 
+} 
+} 
+private Singleton() 
+{ 
+} 
+
+... 
+
+} 
